@@ -1,0 +1,770 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fdd0c1362d0, pid=24761, tid=140588858001152
+#
+# JRE version: 7.0_13-b20
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (23.7-b01 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  0x00007fdd0c1362d0
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+siginfo:si_signo=SIGSEGV: si_errno=0, si_code=2 (SEGV_ACCERR), si_addr=0x00007fdd0c1362d0
+
+Registers:
+RAX=0x00007fdd0c1362d0, RBX=0x00007fdd0c001b88, RCX=0x0000000000000000, RDX=0x00007fdd24000048
+RSP=0x00007fdd64f0be08, RBP=0x00007fdd0c136298, RSI=0x00000000ffffffff, RDI=0x00007fdd0c001b80
+R8 =0x0000000000000000, R9 =0x00007fdd24000078, R10=0x00007fdd24000078, R11=0x0000000000000206
+R12=0x00007fdd65c39638, R13=0x00007fdd64f0be98, R14=0x00007fdd64f0bea8, R15=0x00007fdd65c39638
+RIP=0x00007fdd0c1362d0, EFLAGS=0x0000000000010202, CSGSFS=0x0000000000000033, ERR=0x0000000000000015
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007fdd64f0be08)
+0x00007fdd64f0be08:   00007fdd658b2596 00007fdd65c39638
+0x00007fdd64f0be18:   00007fdd65bffef0 00007fdd65c39660
+0x00007fdd64f0be28:   00007fdd658b14a9 0000000000000000
+0x00007fdd64f0be38:   00007fdd64f0be90 00007fdd64f0bec0
+0x00007fdd64f0be48:   00007fdd64f0be50 0000000000000000
+0x00007fdd64f0be58:   0000000000000000 0000000000000000
+0x00007fdd64f0be68:   0000000000000000 0000000000000000
+0x00007fdd64f0be78:   0000000000000000 0000000000000000
+0x00007fdd64f0be88:   0000000000000000 00007fdd65bfd5b0
+0x00007fdd64f0be98:   00007fdd65bfd5b0 00007fdd240009f0
+0x00007fdd64f0bea8:   00007fdd65bfd5b0 00007fdd24001c90
+0x00007fdd64f0beb8:   000060b900000004 00007fdd65c01470
+0x00007fdd64f0bec8:   00007fdd70191cf8 00007fdd65bfdd50
+0x00007fdd64f0bed8:   0000000100000002 0000000000000000
+0x00007fdd64f0bee8:   0000000000000000 0000000000000000
+0x00007fdd64f0bef8:   0000000000000000 0000000000000000
+0x00007fdd64f0bf08:   00007fdd64f0c9c0 00007fdd64f0c700
+0x00007fdd64f0bf18:   00000031e4e07ee5 0000000000000000
+0x00007fdd64f0bf28:   00007fdd64f0c700 00007fdd64f0c700
+0x00007fdd64f0bf38:   026e9f70fd8df51c 0000000000000000
+0x00007fdd64f0bf48:   0000000000000000 00007fdd64f0c9c0
+0x00007fdd64f0bf58:   00007fdd64f0c700 fdd4569183cdf51c
+0x00007fdd64f0bf68:   020d56b000d7f51c 0000000000000000
+0x00007fdd64f0bf78:   0000000000000000 0000000000000000
+0x00007fdd64f0bf88:   0000000000000000 0000000000000000
+0x00007fdd64f0bf98:   0000000000000000 0000000000000000
+0x00007fdd64f0bfa8:   0000000000000000 00007fdd64f0c700
+0x00007fdd64f0bfb8:   00000031e4af4d1d 0000000000000000
+0x00007fdd64f0bfc8:   0000000000000000 0000000000000000
+0x00007fdd64f0bfd8:   0000000000000000 0000000000000000
+0x00007fdd64f0bfe8:   0000000000000000 0000000000000000
+0x00007fdd64f0bff8:   0000000000000000 0000000000000000 
+
+Instructions: (pc=0x00007fdd0c1362d0)
+0x00007fdd0c1362b0:   b0 d5 bf 65 dd 7f 00 00 98 77 c3 65 dd 7f 00 00
+0x00007fdd0c1362c0:   b0 d5 bf 65 dd 7f 00 00 10 31 00 0c dd 7f 00 00
+0x00007fdd0c1362d0:   03 00 00 00 b9 60 00 00 55 00 00 00 00 00 00 00
+0x00007fdd0c1362e0:   00 00 00 00 00 00 00 00 88 1b 00 0c dd 7f 00 00 
+
+Register to memory mapping:
+
+RAX=0x00007fdd0c1362d0 is an unknown value
+RBX=0x00007fdd0c001b88 is an unknown value
+RCX=0x0000000000000000 is an unknown value
+RDX=0x00007fdd24000048 is an unknown value
+RSP=0x00007fdd64f0be08 is an unknown value
+RBP=0x00007fdd0c136298 is an unknown value
+RSI=0x00000000ffffffff is an unallocated location in the heap
+RDI=0x00007fdd0c001b80 is an unknown value
+R8 =0x0000000000000000 is an unknown value
+R9 =0x00007fdd24000078 is an unknown value
+R10=0x00007fdd24000078 is an unknown value
+R11=0x0000000000000206 is an unknown value
+R12=0x00007fdd65c39638: _ZN8MathLink29MLSyncObjectNameRecordManager23backgroundThreadRecordsE+0x8 in /opt/MATHEMATICA/10.0/SystemFiles/Links/JLink/SystemFiles/Libraries/Linux-x86-64/libJLinkNativeLibrary.so at 0x00007fdd6570e000
+R13=0x00007fdd64f0be98 is an unknown value
+R14=0x00007fdd64f0bea8 is an unknown value
+R15=0x00007fdd65c39638: _ZN8MathLink29MLSyncObjectNameRecordManager23backgroundThreadRecordsE+0x8 in /opt/MATHEMATICA/10.0/SystemFiles/Links/JLink/SystemFiles/Libraries/Linux-x86-64/libJLinkNativeLibrary.so at 0x00007fdd6570e000
+
+
+Stack: [0x00007fdd6470c000,0x00007fdd64f0d000],  sp=0x00007fdd64f0be08,  free space=8191k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  0x00007fdd0c1362d0
+
+
+---------------  P R O C E S S  ---------------
+
+VM state:at safepoint (shutting down)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007fdd70005b00] Threads_lock - owner thread: 0x00007fdd70091000
+
+Heap
+ PSYoungGen      total 86784K, used 3347K [0x00000000faab0000, 0x00000000fffe0000, 0x0000000100000000)
+  eden space 86464K, 3% used [0x00000000faab0000,0x00000000fadf4d90,0x00000000fff20000)
+  from space 320K, 0% used [0x00000000fff90000,0x00000000fff90000,0x00000000fffe0000)
+  to   space 384K, 0% used [0x00000000fff20000,0x00000000fff20000,0x00000000fff80000)
+ ParOldGen       total 174784K, used 152364K [0x00000000f0000000, 0x00000000faab0000, 0x00000000faab0000)
+  object space 174784K, 87% used [0x00000000f0000000,0x00000000f94cb270,0x00000000faab0000)
+ PSPermGen       total 21248K, used 7551K [0x00000000eae00000, 0x00000000ec2c0000, 0x00000000f0000000)
+  object space 21248K, 35% used [0x00000000eae00000,0x00000000eb55ff88,0x00000000ec2c0000)
+
+Card table byte_map: [0x00007fdd7406c000,0x00007fdd74116000] byte_map_base: 0x00007fdd73915000
+
+Polling page: 0x00007fdd75abe000
+
+Code Cache  [0x00007fdd6c767000, 0x00007fdd6c9d7000, 0x00007fdd6f767000)
+ total_blobs=384 nmethods=125 adapters=211 free_code_cache=48464Kb largest_free_block=49597952
+
+Compilation events (10 events):
+Event: 5.799 Thread 0x00007fdd7010d800 nmethod 120 0x00007fdd6c80bb10 code [0x00007fdd6c80bc40, 0x00007fdd6c80bc98]
+Event: 5.799 Thread 0x00007fdd7010d800  121             java.lang.StringCoding::scale (7 bytes)
+Event: 5.799 Thread 0x00007fdd7010d800 nmethod 121 0x00007fdd6c80b890 code [0x00007fdd6c80b9c0, 0x00007fdd6c80ba18]
+Event: 5.800 Thread 0x00007fdd70109800 nmethod 119 0x00007fdd6c811090 code [0x00007fdd6c811200, 0x00007fdd6c8113f8]
+Event: 5.840 Thread 0x00007fdd7010d800  122             ucar.nc2.iosp.IospHelper::readData (665 bytes)
+Event: 5.870 Thread 0x00007fdd7010d800 nmethod 122 0x00007fdd6c816290 code [0x00007fdd6c816760, 0x00007fdd6c817fa8]
+Event: 5.887 Thread 0x00007fdd70109800    2 %           ucar.nc2.iosp.IospHelper::readData @ 331 (665 bytes)
+Event: 5.901 Thread 0x00007fdd70109800 nmethod 2% 0x00007fdd6c811ed0 code [0x00007fdd6c812160, 0x00007fdd6c812f08]
+Event: 6.225 Thread 0x00007fdd7010d800  123             java.util.regex.Pattern$Branch::match (66 bytes)
+Event: 6.230 Thread 0x00007fdd7010d800 nmethod 123 0x00007fdd6c810450 code [0x00007fdd6c810600, 0x00007fdd6c810b28]
+
+GC Heap History (10 events):
+Event: 10.150 GC heap before
+{Heap before GC invocations=72 (full 30):
+ PSYoungGen      total 86720K, used 0K [0x00000000faab0000, 0x00000000fffe0000, 0x0000000100000000)
+  eden space 86336K, 0% used [0x00000000faab0000,0x00000000faab0000,0x00000000fff00000)
+  from space 384K, 0% used [0x00000000fff80000,0x00000000fff80000,0x00000000fffe0000)
+  to   space 448K, 0% used [0x00000000fff00000,0x00000000fff00000,0x00000000fff70000)
+ ParOldGen       total 174784K, used 1254K [0x00000000f0000000, 0x00000000faab0000, 0x00000000faab0000)
+  object space 174784K, 0% used [0x00000000f0000000,0x00000000f0139aa0,0x00000000faab0000)
+ PSPermGen       total 21248K, used 7544K [0x00000000eae00000, 0x00000000ec2c0000, 0x00000000f0000000)
+  object space 21248K, 35% used [0x00000000eae00000,0x00000000eb55e3a0,0x00000000ec2c0000)
+Event: 10.159 GC heap after
+Heap after GC invocations=72 (full 30):
+ PSYoungGen      total 86720K, used 0K [0x00000000faab0000, 0x00000000fffe0000, 0x0000000100000000)
+  eden space 86336K, 0% used [0x00000000faab0000,0x00000000faab0000,0x00000000fff00000)
+  from space 384K, 0% used [0x00000000fff80000,0x00000000fff80000,0x00000000fffe0000)
+  to   space 448K, 0% used [0x00000000fff00000,0x00000000fff00000,0x00000000fff70000)
+ ParOldGen       total 130112K, used 1254K [0x00000000f0000000, 0x00000000f7f10000, 0x00000000faab0000)
+  object space 130112K, 0% used [0x00000000f0000000,0x00000000f0139840,0x00000000f7f10000)
+ PSPermGen       total 21248K, used 7544K [0x00000000eae00000, 0x00000000ec2c0000, 0x00000000f0000000)
+  object space 21248K, 35% used [0x00000000eae00000,0x00000000eb55e3a0,0x00000000ec2c0000)
+}
+Event: 10.640 GC heap before
+{Heap before GC invocations=73 (full 30):
+ PSYoungGen      total 86720K, used 1615K [0x00000000faab0000, 0x00000000fffe0000, 0x0000000100000000)
+  eden space 86336K, 1% used [0x00000000faab0000,0x00000000fac43e98,0x00000000fff00000)
+  from space 384K, 0% used [0x00000000fff80000,0x00000000fff80000,0x00000000fffe0000)
+  to   space 448K, 0% used [0x00000000fff00000,0x00000000fff00000,0x00000000fff70000)
+ ParOldGen       total 174784K, used 152364K [0x00000000f0000000, 0x00000000faab0000, 0x00000000faab0000)
+  object space 174784K, 87% used [0x00000000f0000000,0x00000000f94cb050,0x00000000faab0000)
+ PSPermGen       total 21248K, used 7545K [0x00000000eae00000, 0x00000000ec2c0000, 0x00000000f0000000)
+  object space 21248K, 35% used [0x00000000eae00000,0x00000000eb55e560,0x00000000ec2c0000)
+Event: 10.642 GC heap after
+Heap after GC invocations=73 (full 30):
+ PSYoungGen      total 86784K, used 64K [0x00000000faab0000, 0x0000000100000000, 0x0000000100000000)
+  eden space 86336K, 0% used [0x00000000faab0000,0x00000000faab0000,0x00000000fff00000)
+  from space 448K, 14% used [0x00000000fff00000,0x00000000fff10000,0x00000000fff70000)
+  to   space 448K, 0% used [0x00000000fff90000,0x00000000fff90000,0x0000000100000000)
+ ParOldGen       total 174784K, used 152364K [0x00000000f0000000, 0x00000000faab0000, 0x00000000faab0000)
+  object space 174784K, 87% used [0x00000000f0000000,0x00000000f94cb050,0x00000000faab0000)
+ PSPermGen       total 21248K, used 7545K [0x00000000eae00000, 0x00000000ec2c0000, 0x00000000f0000000)
+  object space 21248K, 35% used [0x00000000eae00000,0x00000000eb55e560,0x00000000ec2c0000)
+}
+Event: 10.642 GC heap before
+{Heap before GC invocations=74 (full 31):
+ PSYoungGen      total 86784K, used 64K [0x00000000faab0000, 0x0000000100000000, 0x0000000100000000)
+  eden space 86336K, 0% used [0x00000000faab0000,0x00000000faab0000,0x00000000fff00000)
+  from space 448K, 14% used [0x00000000fff00000,0x00000000fff10000,0x00000000fff70000)
+  to   space 448K, 0% used [0x00000000fff90000,0x00000000fff90000,0x0000000100000000)
+ ParOldGen       total 174784K, used 152364K [0x00000000f0000000, 0x00000000faab0000, 0x00000000faab0000)
+  object space 174784K, 87% used [0x00000000f0000000,0x00000000f94cb050,0x00000000faab0000)
+ PSPermGen       total 21248K, used 7545K [0x00000000eae00000, 0x00000000ec2c0000, 0x00000000f0000000)
+  object space 21248K, 35% used [0x00000000eae00000,0x00000000eb55e560,0x00000000ec2c0000)
+Event: 10.674 GC heap after
+Heap after GC invocations=74 (full 31):
+ PSYoungGen      total 86784K, used 0K [0x00000000faab0000, 0x0000000100000000, 0x0000000100000000)
+  eden space 86336K, 0% used [0x00000000faab0000,0x00000000faab0000,0x00000000fff00000)
+  from space 448K, 0% used [0x00000000fff00000,0x00000000fff00000,0x00000000fff70000)
+  to   space 448K, 0% used [0x00000000fff90000,0x00000000fff90000,0x0000000100000000)
+ ParOldGen       total 174784K, used 152364K [0x00000000f0000000, 0x00000000faab0000, 0x00000000faab0000)
+  object space 174784K, 87% used [0x00000000f0000000,0x00000000f94cb320,0x00000000faab0000)
+ PSPermGen       total 21248K, used 7545K [0x00000000eae00000, 0x00000000ec2c0000, 0x00000000f0000000)
+  object space 21248K, 35% used [0x00000000eae00000,0x00000000eb55e560,0x00000000ec2c0000)
+}
+Event: 10.674 GC heap before
+{Heap before GC invocations=75 (full 31):
+ PSYoungGen      total 86784K, used 0K [0x00000000faab0000, 0x0000000100000000, 0x0000000100000000)
+  eden space 86336K, 0% used [0x00000000faab0000,0x00000000faab0000,0x00000000fff00000)
+  from space 448K, 0% used [0x00000000fff00000,0x00000000fff00000,0x00000000fff70000)
+  to   space 448K, 0% used [0x00000000fff90000,0x00000000fff90000,0x0000000100000000)
+ ParOldGen       total 174784K, used 152364K [0x00000000f0000000, 0x00000000faab0000, 0x00000000faab0000)
+  object space 174784K, 87% used [0x00000000f0000000,0x00000000f94cb320,0x00000000faab0000)
+ PSPermGen       total 21248K, used 7545K [0x00000000eae00000, 0x00000000ec2c0000, 0x00000000f0000000)
+  object space 21248K, 35% used [0x00000000eae00000,0x00000000eb55e560,0x00000000ec2c0000)
+Event: 10.675 GC heap after
+Heap after GC invocations=75 (full 31):
+ PSYoungGen      total 86784K, used 0K [0x00000000faab0000, 0x00000000fffe0000, 0x0000000100000000)
+  eden space 86464K, 0% used [0x00000000faab0000,0x00000000faab0000,0x00000000fff20000)
+  from space 320K, 0% used [0x00000000fff90000,0x00000000fff90000,0x00000000fffe0000)
+  to   space 384K, 0% used [0x00000000fff20000,0x00000000fff20000,0x00000000fff80000)
+ ParOldGen       total 174784K, used 152364K [0x00000000f0000000, 0x00000000faab0000, 0x00000000faab0000)
+  object space 174784K, 87% used [0x00000000f0000000,0x00000000f94cb320,0x00000000faab0000)
+ PSPermGen       total 21248K, used 7545K [0x00000000eae00000, 0x00000000ec2c0000, 0x00000000f0000000)
+  object space 21248K, 35% used [0x00000000eae00000,0x00000000eb55e560,0x00000000ec2c0000)
+}
+Event: 10.675 GC heap before
+{Heap before GC invocations=76 (full 32):
+ PSYoungGen      total 86784K, used 0K [0x00000000faab0000, 0x00000000fffe0000, 0x0000000100000000)
+  eden space 86464K, 0% used [0x00000000faab0000,0x00000000faab0000,0x00000000fff20000)
+  from space 320K, 0% used [0x00000000fff90000,0x00000000fff90000,0x00000000fffe0000)
+  to   space 384K, 0% used [0x00000000fff20000,0x00000000fff20000,0x00000000fff80000)
+ ParOldGen       total 174784K, used 152364K [0x00000000f0000000, 0x00000000faab0000, 0x00000000faab0000)
+  object space 174784K, 87% used [0x00000000f0000000,0x00000000f94cb320,0x00000000faab0000)
+ PSPermGen       total 21248K, used 7545K [0x00000000eae00000, 0x00000000ec2c0000, 0x00000000f0000000)
+  object space 21248K, 35% used [0x00000000eae00000,0x00000000eb55e560,0x00000000ec2c0000)
+Event: 10.685 GC heap after
+Heap after GC invocations=76 (full 32):
+ PSYoungGen      total 86784K, used 0K [0x00000000faab0000, 0x00000000fffe0000, 0x0000000100000000)
+  eden space 86464K, 0% used [0x00000000faab0000,0x00000000faab0000,0x00000000fff20000)
+  from space 320K, 0% used [0x00000000fff90000,0x00000000fff90000,0x00000000fffe0000)
+  to   space 384K, 0% used [0x00000000fff20000,0x00000000fff20000,0x00000000fff80000)
+ ParOldGen       total 174784K, used 152364K [0x00000000f0000000, 0x00000000faab0000, 0x00000000faab0000)
+  object space 174784K, 87% used [0x00000000f0000000,0x00000000f94cb270,0x00000000faab0000)
+ PSPermGen       total 21248K, used 7545K [0x00000000eae00000, 0x00000000ec2c0000, 0x00000000f0000000)
+  object space 21248K, 35% used [0x00000000eae00000,0x00000000eb55e560,0x00000000ec2c0000)
+}
+
+Deoptimization events (4 events):
+Event: 1.466 Thread 0x00007fdd70356800 Uncommon trap 85 fr.pc 0x00007fdd6c7dd934
+Event: 2.773 Thread 0x00007fdd70356800 Uncommon trap -12 fr.pc 0x00007fdd6c7cd3ac
+Event: 3.299 Thread 0x00007fdd70356800 Uncommon trap -83 fr.pc 0x00007fdd6c7ff3c8
+Event: 5.003 Thread 0x00007fdd70356800 Uncommon trap -83 fr.pc 0x00007fdd6c805fe0
+
+Internal exceptions (10 events):
+Event: 9.323 Thread 0x00007fdd70356800 Threw 0x00000000eaea6480 at /HUDSON/workspace/jdk7u13-2-build-linux-amd64-product/jdk7u13/hotspot/src/share/vm/gc_interface/collect
+Event: 9.323 Thread 0x00007fdd70356800 Threw 0x00000000faab0000 at /HUDSON/workspace/jdk7u13-2-build-linux-amd64-product/jdk7u13/hotspot/src/share/vm/runtime/reflection.c
+Event: 9.929 Thread 0x00007fdd70356800 Threw 0x00000000eaea6480 at /HUDSON/workspace/jdk7u13-2-build-linux-amd64-product/jdk7u13/hotspot/src/share/vm/gc_interface/collect
+Event: 9.929 Thread 0x00007fdd70356800 Threw 0x00000000faab0000 at /HUDSON/workspace/jdk7u13-2-build-linux-amd64-product/jdk7u13/hotspot/src/share/vm/runtime/reflection.c
+Event: 10.012 Thread 0x00007fdd70356800 Threw 0x00000000eaea6480 at /HUDSON/workspace/jdk7u13-2-build-linux-amd64-product/jdk7u13/hotspot/src/share/vm/gc_interface/collect
+Event: 10.012 Thread 0x00007fdd70356800 Threw 0x00000000faab0000 at /HUDSON/workspace/jdk7u13-2-build-linux-amd64-product/jdk7u13/hotspot/src/share/vm/runtime/reflection.c
+Event: 10.159 Thread 0x00007fdd70356800 Threw 0x00000000eaea6480 at /HUDSON/workspace/jdk7u13-2-build-linux-amd64-product/jdk7u13/hotspot/src/share/vm/gc_interface/collect
+Event: 10.159 Thread 0x00007fdd70356800 Threw 0x00000000faab0000 at /HUDSON/workspace/jdk7u13-2-build-linux-amd64-product/jdk7u13/hotspot/src/share/vm/runtime/reflection.c
+Event: 10.685 Thread 0x00007fdd70356800 Threw 0x00000000eaea6480 at /HUDSON/workspace/jdk7u13-2-build-linux-amd64-product/jdk7u13/hotspot/src/share/vm/gc_interface/collect
+Event: 10.685 Thread 0x00007fdd70356800 Threw 0x00000000faab0000 at /HUDSON/workspace/jdk7u13-2-build-linux-amd64-product/jdk7u13/hotspot/src/share/vm/runtime/reflection.c
+
+Events (10 events):
+Event: 10.640 Executing VM operation: ParallelGCFailedAllocation
+Event: 10.685 Executing VM operation: ParallelGCFailedAllocation done
+Event: 52.283 loading class 0x00007fdd701bfad0
+Event: 52.283 loading class 0x00007fdd701bf860
+Event: 52.283 loading class 0x00007fdd701bf860 done
+Event: 52.283 loading class 0x00007fdd701bfad0 done
+Event: 52.283 Thread 0x00007fdd0c382800 Thread added: 0x00007fdd0c382800
+Event: 52.283 Thread 0x00007fdd0c009800 Thread exited: 0x00007fdd0c009800
+Event: 52.283 Thread 0x00007fdd7010c000 Thread exited: 0x00007fdd7010c000
+Event: 52.283 Executing VM operation: Exit
+
+
+Dynamic libraries:
+00400000-00401000 r-xp 00000000 00:2c 13768947                           /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/bin/java
+00600000-00601000 rw-p 00000000 00:2c 13768947                           /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/bin/java
+00a15000-00a36000 rw-p 00000000 00:00 0                                  [heap]
+eae00000-ec2c0000 rw-p 00000000 00:00 0 
+ec2c0000-f0000000 rw-p 00000000 00:00 0 
+f0000000-faab0000 rw-p 00000000 00:00 0 
+faab0000-fffe0000 rw-p 00000000 00:00 0 
+fffe0000-100000000 ---p 00000000 00:00 0 
+31e4200000-31e4220000 r-xp 00000000 fd:00 141243                         /usr/lib64/ld-2.18.so
+31e441f000-31e4420000 r--p 0001f000 fd:00 141243                         /usr/lib64/ld-2.18.so
+31e4420000-31e4421000 rw-p 00020000 fd:00 141243                         /usr/lib64/ld-2.18.so
+31e4421000-31e4422000 rw-p 00000000 00:00 0 
+31e4600000-31e4603000 r-xp 00000000 fd:00 141251                         /usr/lib64/libdl-2.18.so
+31e4603000-31e4802000 ---p 00003000 fd:00 141251                         /usr/lib64/libdl-2.18.so
+31e4802000-31e4803000 r--p 00002000 fd:00 141251                         /usr/lib64/libdl-2.18.so
+31e4803000-31e4804000 rw-p 00003000 fd:00 141251                         /usr/lib64/libdl-2.18.so
+31e4a00000-31e4bb4000 r-xp 00000000 fd:00 141244                         /usr/lib64/libc-2.18.so
+31e4bb4000-31e4db3000 ---p 001b4000 fd:00 141244                         /usr/lib64/libc-2.18.so
+31e4db3000-31e4db7000 r--p 001b3000 fd:00 141244                         /usr/lib64/libc-2.18.so
+31e4db7000-31e4db9000 rw-p 001b7000 fd:00 141244                         /usr/lib64/libc-2.18.so
+31e4db9000-31e4dbe000 rw-p 00000000 00:00 0 
+31e4e00000-31e4e18000 r-xp 00000000 fd:00 141247                         /usr/lib64/libpthread-2.18.so
+31e4e18000-31e5017000 ---p 00018000 fd:00 141247                         /usr/lib64/libpthread-2.18.so
+31e5017000-31e5018000 r--p 00017000 fd:00 141247                         /usr/lib64/libpthread-2.18.so
+31e5018000-31e5019000 rw-p 00018000 fd:00 141247                         /usr/lib64/libpthread-2.18.so
+31e5019000-31e501d000 rw-p 00000000 00:00 0 
+31e5200000-31e5305000 r-xp 00000000 fd:00 141271                         /usr/lib64/libm-2.18.so
+31e5305000-31e5505000 ---p 00105000 fd:00 141271                         /usr/lib64/libm-2.18.so
+31e5505000-31e5506000 r--p 00105000 fd:00 141271                         /usr/lib64/libm-2.18.so
+31e5506000-31e5507000 rw-p 00106000 fd:00 141271                         /usr/lib64/libm-2.18.so
+31e5e00000-31e5e07000 r-xp 00000000 fd:00 141248                         /usr/lib64/librt-2.18.so
+31e5e07000-31e6006000 ---p 00007000 fd:00 141248                         /usr/lib64/librt-2.18.so
+31e6006000-31e6007000 r--p 00006000 fd:00 141248                         /usr/lib64/librt-2.18.so
+31e6007000-31e6008000 rw-p 00007000 fd:00 141248                         /usr/lib64/librt-2.18.so
+31e6600000-31e6615000 r-xp 00000000 fd:00 141274                         /usr/lib64/libgcc_s-4.8.3-20140911.so.1
+31e6615000-31e6814000 ---p 00015000 fd:00 141274                         /usr/lib64/libgcc_s-4.8.3-20140911.so.1
+31e6814000-31e6815000 r--p 00014000 fd:00 141274                         /usr/lib64/libgcc_s-4.8.3-20140911.so.1
+31e6815000-31e6816000 rw-p 00015000 fd:00 141274                         /usr/lib64/libgcc_s-4.8.3-20140911.so.1
+31e7200000-31e7216000 r-xp 00000000 fd:00 141255                         /usr/lib64/libresolv-2.18.so
+31e7216000-31e7416000 ---p 00016000 fd:00 141255                         /usr/lib64/libresolv-2.18.so
+31e7416000-31e7417000 r--p 00016000 fd:00 141255                         /usr/lib64/libresolv-2.18.so
+31e7417000-31e7418000 rw-p 00017000 fd:00 141255                         /usr/lib64/libresolv-2.18.so
+31e7418000-31e741a000 rw-p 00000000 00:00 0 
+31ec200000-31ec2e9000 r-xp 00000000 fd:00 141281                         /usr/lib64/libstdc++.so.6.0.19
+31ec2e9000-31ec4e9000 ---p 000e9000 fd:00 141281                         /usr/lib64/libstdc++.so.6.0.19
+31ec4e9000-31ec4f1000 r--p 000e9000 fd:00 141281                         /usr/lib64/libstdc++.so.6.0.19
+31ec4f1000-31ec4f3000 rw-p 000f1000 fd:00 141281                         /usr/lib64/libstdc++.so.6.0.19
+31ec4f3000-31ec508000 rw-p 00000000 00:00 0 
+7fdd04000000-7fdd04021000 rw-p 00000000 00:00 0 
+7fdd04021000-7fdd08000000 ---p 00000000 00:00 0 
+7fdd08000000-7fdd08021000 rw-p 00000000 00:00 0 
+7fdd08021000-7fdd0c000000 ---p 00000000 00:00 0 
+7fdd0c000000-7fdd0c396000 rw-p 00000000 00:00 0 
+7fdd0c396000-7fdd10000000 ---p 00000000 00:00 0 
+7fdd10000000-7fdd10021000 rw-p 00000000 00:00 0 
+7fdd10021000-7fdd14000000 ---p 00000000 00:00 0 
+7fdd14000000-7fdd14021000 rw-p 00000000 00:00 0 
+7fdd14021000-7fdd18000000 ---p 00000000 00:00 0 
+7fdd19ce0000-7fdd19ce3000 ---p 00000000 00:00 0 
+7fdd19ce3000-7fdd19de1000 rw-p 00000000 00:00 0                          [stack:24800]
+7fdd19de1000-7fdd19df6000 r-xp 00000000 00:2c 13769063                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/amd64/libnet.so
+7fdd19df6000-7fdd19ff6000 ---p 00015000 00:2c 13769063                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/amd64/libnet.so
+7fdd19ff6000-7fdd19ff7000 rw-p 00015000 00:2c 13769063                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/amd64/libnet.so
+7fdd19ff7000-7fdd1a007000 r-xp 00000000 00:2c 13769064                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/amd64/libnio.so
+7fdd1a007000-7fdd1a207000 ---p 00010000 00:2c 13769064                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/amd64/libnio.so
+7fdd1a207000-7fdd1a208000 rw-p 00010000 00:2c 13769064                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/amd64/libnio.so
+7fdd1a208000-7fdd1a272000 r--s 00e18000 00:2c 13769007                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/tools.jar
+7fdd1a272000-7fdd1a273000 r--s 00000000 00:2c 13763221                   /opt/MATHEMATICA/10.0/SystemFiles/Components/Interpreter/Java/ParseTelephoneNumber.jar
+7fdd1a273000-7fdd1a283000 r--s 00038000 00:2c 13763222                   /opt/MATHEMATICA/10.0/SystemFiles/Components/Interpreter/Java/libphonenumber-5.9.jar
+7fdd1a283000-7fdd1a2d2000 r--s 00401000 00:2c 13632067                   /opt/MATHEMATICA/10.0/AddOns/Applications/LightweightGridClient/Java/wolfram-remote-services-client.jar
+7fdd1a2d2000-7fdd1a2d3000 r--s 00000000 00:2c 13631805                   /opt/MATHEMATICA/10.0/AddOns/Applications/ClusterIntegration/Java/Wolfram_SGE.jar
+7fdd1a2d5000-7fdd1a2d8000 r--s 0001b000 00:2c 13895959                   /opt/MATHEMATICA/10.0/SystemFiles/Links/WebServices/Java/junit-3.8.1.jar
+7fdd1a2d8000-7fdd1a2da000 r--s 00008000 00:2c 13895958                   /opt/MATHEMATICA/10.0/SystemFiles/Links/WebServices/Java/commons-logging-1.0.4.jar
+7fdd1a2da000-7fdd1a2df000 r--s 00040000 00:2c 13895957                   /opt/MATHEMATICA/10.0/SystemFiles/Links/WebServices/Java/commons-httpclient-3.0.jar
+7fdd1a2df000-7fdd1a2e1000 r--s 00006000 00:2c 13895676                   /opt/MATHEMATICA/10.0/SystemFiles/Links/RLink/Java/REngine.jar
+7fdd1a2e1000-7fdd1a2e4000 r--s 00008000 00:2c 13895677                   /opt/MATHEMATICA/10.0/SystemFiles/Links/RLink/Java/RLink.jar
+7fdd1a2e4000-7fdd1a2e8000 r--s 000f2000 00:2c 13895678                   /opt/MATHEMATICA/10.0/SystemFiles/Links/RLink/Java/jna.jar
+7fdd1a2e8000-7fdd1a2e9000 r--s 00009000 00:2c 13895674                   /opt/MATHEMATICA/10.0/SystemFiles/Links/RLink/Java/JRI.jar
+7fdd1a2e9000-7fdd1a2ea000 r--s 00002000 00:2c 13895675                   /opt/MATHEMATICA/10.0/SystemFiles/Links/RLink/Java/JRIEngine.jar
+7fdd1a2ea000-7fdd1a2f3000 r--s 0006d000 00:2c 13895679                   /opt/MATHEMATICA/10.0/SystemFiles/Links/RLink/Java/log4j-1.2.16.jar
+7fdd1a2f3000-7fdd1a2f8000 r--s 00309000 00:2c 13773546                   /opt/MATHEMATICA/10.0/SystemFiles/Links/DatabaseLink/Java/sqlite-jdbc-3.7.2.jar
+7fdd1a2f8000-7fdd1a2fb000 r--s 00018000 00:2c 13773535                   /opt/MATHEMATICA/10.0/SystemFiles/Links/DatabaseLink/Java/commons-dbcp-1.2.1.jar
+7fdd1a2fb000-7fdd1a308000 r--s 0017c000 00:2c 13773540                   /opt/MATHEMATICA/10.0/SystemFiles/Links/DatabaseLink/Java/h2-1.3.174.jar
+7fdd1a308000-7fdd1a316000 r--s 000ca000 00:2c 13773542                   /opt/MATHEMATICA/10.0/SystemFiles/Links/DatabaseLink/Java/jaybird-full-2.2.3.jar
+7fdd1a316000-7fdd1a340000 r--s 0028a000 00:2c 13773537                   /opt/MATHEMATICA/10.0/SystemFiles/Links/DatabaseLink/Java/derby.jar
+7fdd1a340000-7fdd1a343000 r--s 0004b000 00:2c 13773543                   /opt/MATHEMATICA/10.0/SystemFiles/Links/DatabaseLink/Java/jtds-1.3.1.jar
+7fdd1a343000-7fdd1a34b000 r--s 000cd000 00:2c 13773544                   /opt/MATHEMATICA/10.0/SystemFiles/Links/DatabaseLink/Java/mysql-connector-java-5.1.27-bin.jar
+7fdd1a34b000-7fdd1a352000 r--s 00089000 00:2c 13773545                   /opt/MATHEMATICA/10.0/SystemFiles/Links/DatabaseLink/Java/postgresql-9.3-1100.jdbc4.jar
+7fdd1a352000-7fdd1a359000 r--s 00088000 00:2c 13773538                   /opt/MATHEMATICA/10.0/SystemFiles/Links/DatabaseLink/Java/derbyclient.jar
+7fdd1a359000-7fdd1a35f000 r--s 00027000 00:2c 13773539                   /opt/MATHEMATICA/10.0/SystemFiles/Links/DatabaseLink/Java/glazedlists.jar
+7fdd1a35f000-7fdd1a361000 r--s 00009000 00:2c 13773536                   /opt/MATHEMATICA/10.0/SystemFiles/Links/DatabaseLink/Java/commons-pool-1.2.jar
+7fdd1a361000-7fdd1a36e000 r--s 0007c000 00:2c 13773534                   /opt/MATHEMATICA/10.0/SystemFiles/Links/DatabaseLink/Java/commons-collections-3.1.jar
+7fdd1a36e000-7fdd1a37c000 r--s 00159000 00:2c 13773541                   /opt/MATHEMATICA/10.0/SystemFiles/Links/DatabaseLink/Java/hsqldb.jar
+7fdd1a37c000-7fdd1a38e000 r--s 000ba000 00:2c 13632742                   /opt/MATHEMATICA/10.0/AddOns/Packages/GUIKit/Java/xercesImpl.jar
+7fdd1a38e000-7fdd1a396000 r--s 00040000 00:2c 13632741                   /opt/MATHEMATICA/10.0/AddOns/Packages/GUIKit/Java/diva-canvas-core.jar
+7fdd1a396000-7fdd1a397000 r--s 00009000 00:2c 13632736                   /opt/MATHEMATICA/10.0/AddOns/Packages/GUIKit/Java/OculusLayout.jar
+7fdd1a397000-7fdd1a39c000 r--s 00010000 00:2c 13632743                   /opt/MATHEMATICA/10.0/AddOns/Packages/GUIKit/Java/xmlParserAPIs.jar
+7fdd1a39c000-7fdd1a3a3000 r--s 00036000 00:2c 13632739                   /opt/MATHEMATICA/10.0/AddOns/Packages/GUIKit/Java/concurrent.jar
+7fdd1a3a3000-7fdd1a3a7000 r--s 00026000 00:2c 13632738                   /opt/MATHEMATICA/10.0/AddOns/Packages/GUIKit/Java/bsf.jar
+7fdd1a3a7000-7fdd1a3a9000 r--s 0000d000 00:2c 13632737                   /opt/MATHEMATICA/10.0/AddOns/Packages/GUIKit/Java/bsf-Wolfram.jar
+7fdd1a3a9000-7fdd1a3b0000 r--s 0003d000 00:2c 13632735                   /opt/MATHEMATICA/10.0/AddOns/Packages/GUIKit/Java/GUIKit.jar
+7fdd1a3b0000-7fdd1a3b2000 r--s 0000a000 00:2c 13763476                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/commons-codec-1.3.jar
+7fdd1a3b2000-7fdd1a3b6000 r--s 00031000 00:2c 13763487                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/jackcess-1.1.18.jar
+7fdd1a3b6000-7fdd1a3bc000 r--s 00044000 00:2c 13763500                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/poi-examples-3.8-20120326.jar
+7fdd1a3bc000-7fdd1a3be000 r--s 00011000 00:2c 13763470                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/Convert.jar
+7fdd1a3be000-7fdd1a3d4000 r--s 00110000 00:2c 13763511                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/xercesImpl.jar
+7fdd1a3d4000-7fdd1a3d5000 r--s 002a0000 00:2c 13763507                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/resourcesOptional.jar
+7fdd1a3d5000-7fdd1a3d7000 r--s 00006000 00:2c 13763501                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/poi-excelant-3.8-20120326.jar
+7fdd1a3d7000-7fdd1a3d9000 r--s 00008000 00:2c 13763488                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/javase-3.0.0.jar
+7fdd1a3d9000-7fdd1a3e9000 r--s 00112000 00:2c 13763504                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/poi-scratchpad-3.8-20120326.jar
+7fdd1a3e9000-7fdd1a3f1000 r--s 0007c000 00:2c 13763481                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/core-3.0.0.jar
+7fdd1a3f1000-7fdd1a3f2000 r--s 00004000 00:2c 13763484                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/externalservice.jar
+7fdd1a3f2000-7fdd1a3f8000 r--s 00055000 00:2c 13763495                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/mail.jar
+7fdd1a3f8000-7fdd1a42a000 r--s 00428000 00:2c 13763498                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/netcdf-4.2.jar
+7fdd1a42a000-7fdd1a432000 r--s 00028000 00:2c 13763512                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/xml-apis.jar
+7fdd1a432000-7fdd1a436000 r--s 0002f000 00:2c 13763479                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/commons-lang-2.1.jar
+7fdd1a436000-7fdd1a438000 r--s 0000d000 00:2c 13763480                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/commons-logging-1.1.1.jar
+7fdd1a438000-7fdd1a445000 r--s 0007f000 00:2c 13763477                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/commons-collections-3.2.jar
+7fdd1a445000-7fdd1a447000 r--s 00008000 00:2c 13763496                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/mediaplayer.jar
+7fdd1a447000-7fdd1a44c000 r--s 00048000 00:2c 13763483                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/dom4j-1.6.1.jar
+7fdd1a44c000-7fdd1a456000 r--s 00086000 00:2c 13763494                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/ldap.jar
+7fdd1a456000-7fdd1a45f000 r--s 00085000 00:2c 13763472                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/JPEG2000b.jar
+7fdd1a45f000-7fdd1a463000 r--s 0002f000 00:2c 13763505                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/prefsAll.jar
+7fdd1a463000-7fdd1a46e000 r--s 000f8000 00:2c 13763486                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/grib-8.0.jar
+7fdd1a46e000-7fdd1a470000 r--s 0000e000 00:2c 13763497                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/multiplayer.jar
+7fdd1a470000-7fdd1a473000 r--s 00023000 00:2c 13763490                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/jdom.jar
+7fdd1a473000-7fdd1a47e000 r--s 000a5000 00:2c 13763493                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/jxl.jar
+7fdd1a47e000-7fdd1a4bb000 r--s 0024f000 00:2c 13763513                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/xmlbeans-2.3.0.jar
+7fdd1a4bb000-7fdd1a4be000 ---p 00000000 00:00 0 
+7fdd1a4be000-7fdd1a5bc000 rw-p 00000000 00:00 0 
+7fdd1a5bc000-7fdd1a5bd000 ---p 00000000 00:00 0 
+7fdd1a5bd000-7fdd1adbd000 rw-p 00000000 00:00 0 
+7fdd1adbd000-7fdd1adbe000 ---p 00000000 00:00 0 
+7fdd1adbe000-7fdd1b7ff000 rw-p 00000000 00:00 0 
+7fdd1b7ff000-7fdd1b800000 ---p 00000000 00:00 0 
+7fdd1b800000-7fdd1c000000 rw-p 00000000 00:00 0 
+7fdd1c000000-7fdd1c021000 rw-p 00000000 00:00 0 
+7fdd1c021000-7fdd20000000 ---p 00000000 00:00 0 
+7fdd20000000-7fdd20021000 rw-p 00000000 00:00 0 
+7fdd20021000-7fdd24000000 ---p 00000000 00:00 0 
+7fdd24000000-7fdd24021000 rw-p 00000000 00:00 0 
+7fdd24021000-7fdd28000000 ---p 00000000 00:00 0 
+7fdd28000000-7fdd28021000 rw-p 00000000 00:00 0 
+7fdd28021000-7fdd2c000000 ---p 00000000 00:00 0 
+7fdd2c000000-7fdd2c021000 rw-p 00000000 00:00 0 
+7fdd2c021000-7fdd30000000 ---p 00000000 00:00 0 
+7fdd30000000-7fdd30021000 rw-p 00000000 00:00 0 
+7fdd30021000-7fdd34000000 ---p 00000000 00:00 0 
+7fdd34000000-7fdd343cf000 rw-p 00000000 00:00 0 
+7fdd343cf000-7fdd38000000 ---p 00000000 00:00 0 
+7fdd38000000-7fdd38021000 rw-p 00000000 00:00 0 
+7fdd38021000-7fdd3c000000 ---p 00000000 00:00 0 
+7fdd3c000000-7fdd3c60c000 rw-p 00000000 00:00 0 
+7fdd3c60c000-7fdd40000000 ---p 00000000 00:00 0 
+7fdd40000000-7fdd40002000 r--s 0000c000 00:2c 13763474                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/activation.jar
+7fdd40002000-7fdd40094000 r--s 003ec000 00:2c 13763503                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/poi-ooxml-schemas-3.8-20120326.jar
+7fdd40094000-7fdd402d5000 rw-p 00000000 00:00 0 
+7fdd402d5000-7fdd402d6000 ---p 00000000 00:00 0 
+7fdd402d6000-7fdd40ad6000 rw-p 00000000 00:00 0                          [stack:24780]
+7fdd40ad6000-7fdd40ad7000 ---p 00000000 00:00 0 
+7fdd40ad7000-7fdd412d7000 rw-p 00000000 00:00 0                          [stack:24779]
+7fdd412d7000-7fdd412d8000 ---p 00000000 00:00 0 
+7fdd412d8000-7fdd41ad8000 rw-p 00000000 00:00 0                          [stack:24778]
+7fdd41ad8000-7fdd48000000 r--p 00000000 fd:00 171311                     /usr/lib/locale/locale-archive
+7fdd48000000-7fdd48021000 rw-p 00000000 00:00 0 
+7fdd48021000-7fdd4c000000 ---p 00000000 00:00 0 
+7fdd4c000000-7fdd4c021000 rw-p 00000000 00:00 0 
+7fdd4c021000-7fdd50000000 ---p 00000000 00:00 0 
+7fdd50000000-7fdd50021000 rw-p 00000000 00:00 0 
+7fdd50021000-7fdd54000000 ---p 00000000 00:00 0 
+7fdd54000000-7fdd54021000 rw-p 00000000 00:00 0 
+7fdd54021000-7fdd58000000 ---p 00000000 00:00 0 
+7fdd58000000-7fdd58021000 rw-p 00000000 00:00 0 
+7fdd58021000-7fdd5c000000 ---p 00000000 00:00 0 
+7fdd5c000000-7fdd5c021000 rw-p 00000000 00:00 0 
+7fdd5c021000-7fdd60000000 ---p 00000000 00:00 0 
+7fdd60000000-7fdd60021000 rw-p 00000000 00:00 0 
+7fdd60021000-7fdd64000000 ---p 00000000 00:00 0 
+7fdd64000000-7fdd64001000 r--s 00011000 00:2c 13763482                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/customizer.jar
+7fdd64001000-7fdd64021000 r--s 0019d000 00:2c 13763499                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/poi-3.8-20120326.jar
+7fdd64021000-7fdd64052000 rw-s 00000000 00:11 1034966                    /dev/shm/e82t9_shm (deleted)
+7fdd64083000-7fdd64086000 ---p 00000000 00:00 0 
+7fdd64086000-7fdd642a6000 rw-p 00000000 00:00 0                          [stack:24783]
+7fdd642d7000-7fdd642dc000 r-xp 00000000 fd:00 131917                     /usr/lib64/libnss_dns-2.18.so
+7fdd642dc000-7fdd644db000 ---p 00005000 fd:00 131917                     /usr/lib64/libnss_dns-2.18.so
+7fdd644db000-7fdd644dc000 r--p 00004000 fd:00 131917                     /usr/lib64/libnss_dns-2.18.so
+7fdd644dc000-7fdd644dd000 rw-p 00005000 fd:00 131917                     /usr/lib64/libnss_dns-2.18.so
+7fdd644dd000-7fdd644df000 r-xp 00000000 fd:00 147390                     /usr/lib64/libnss_mdns4_minimal.so.2
+7fdd644df000-7fdd646de000 ---p 00002000 fd:00 147390                     /usr/lib64/libnss_mdns4_minimal.so.2
+7fdd646de000-7fdd646df000 r--p 00001000 fd:00 147390                     /usr/lib64/libnss_mdns4_minimal.so.2
+7fdd646df000-7fdd646e0000 rw-p 00002000 fd:00 147390                     /usr/lib64/libnss_mdns4_minimal.so.2
+7fdd646e0000-7fdd646e1000 r--s 0000a000 00:2c 13763473                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/JSON.jar
+7fdd646e1000-7fdd646e3000 r--s 00005000 00:2c 13763510                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/tar.jar
+7fdd646e3000-7fdd646e8000 r--s 00040000 00:2c 13763478                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/commons-httpclient-3.0.jar
+7fdd646e8000-7fdd64700000 r--s 001b9000 00:2c 13763491                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/jmf.jar
+7fdd64700000-7fdd6470c000 r--s 000d8000 00:2c 13763502                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/poi-ooxml-3.8-20120326.jar
+7fdd6470c000-7fdd6470d000 ---p 00000000 00:00 0 
+7fdd6470d000-7fdd64f0d000 rw-p 00000000 00:00 0                          [stack:24777]
+7fdd64f0d000-7fdd64f0e000 ---p 00000000 00:00 0 
+7fdd64f0e000-7fdd6570e000 rw-p 00000000 00:00 0                          [stack:24776]
+7fdd6570e000-7fdd659fd000 r-xp 00000000 00:2c 13894629                   /opt/MATHEMATICA/10.0/SystemFiles/Links/JLink/SystemFiles/Libraries/Linux-x86-64/libJLinkNativeLibrary.so
+7fdd659fd000-7fdd65bfd000 ---p 002ef000 00:2c 13894629                   /opt/MATHEMATICA/10.0/SystemFiles/Links/JLink/SystemFiles/Libraries/Linux-x86-64/libJLinkNativeLibrary.so
+7fdd65bfd000-7fdd65c38000 rw-p 002ef000 00:2c 13894629                   /opt/MATHEMATICA/10.0/SystemFiles/Links/JLink/SystemFiles/Libraries/Linux-x86-64/libJLinkNativeLibrary.so
+7fdd65c38000-7fdd65c3a000 rw-p 00000000 00:00 0 
+7fdd65c3a000-7fdd65c3b000 ---p 00000000 00:00 0 
+7fdd65c3b000-7fdd65d3b000 rw-p 00000000 00:00 0 
+7fdd65d3b000-7fdd65d3e000 ---p 00000000 00:00 0 
+7fdd65d3e000-7fdd65e3c000 rw-p 00000000 00:00 0                          [stack:24774]
+7fdd65e3c000-7fdd65e3f000 ---p 00000000 00:00 0 
+7fdd65e3f000-7fdd65f3d000 rw-p 00000000 00:00 0                          [stack:24773]
+7fdd65f3d000-7fdd65f40000 ---p 00000000 00:00 0 
+7fdd65f40000-7fdd6603e000 rw-p 00000000 00:00 0                          [stack:24772]
+7fdd6603e000-7fdd66041000 ---p 00000000 00:00 0 
+7fdd66041000-7fdd6613f000 rw-p 00000000 00:00 0 
+7fdd6613f000-7fdd66142000 ---p 00000000 00:00 0 
+7fdd66142000-7fdd66240000 rw-p 00000000 00:00 0                          [stack:24770]
+7fdd66240000-7fdd66243000 ---p 00000000 00:00 0 
+7fdd66243000-7fdd66341000 rw-p 00000000 00:00 0                          [stack:24769]
+7fdd66341000-7fdd66342000 ---p 00000000 00:00 0 
+7fdd66342000-7fdd673b4000 rw-p 00000000 00:00 0                          [stack:24768]
+7fdd673b4000-7fdd67570000 r--s 031ba000 00:2c 13769005                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/rt.jar
+7fdd67570000-7fdd68000000 rw-p 00000000 00:00 0 
+7fdd68000000-7fdd68021000 rw-p 00000000 00:00 0 
+7fdd68021000-7fdd6c000000 ---p 00000000 00:00 0 
+7fdd6c000000-7fdd6c001000 r--s 00003000 00:2c 13763514                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/zxing-client.jar
+7fdd6c001000-7fdd6c002000 r--s 00001000 00:2c 13763489                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/jdbf.jar
+7fdd6c002000-7fdd6c004000 r--s 00014000 00:2c 13763471                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/Exif.jar
+7fdd6c004000-7fdd6c006000 r--s 0000b000 00:2c 13763509                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/tagsoup-1.0rc9.jar
+7fdd6c006000-7fdd6c363000 rw-p 00000000 00:00 0 
+7fdd6c363000-7fdd6c364000 ---p 00000000 00:00 0 
+7fdd6c364000-7fdd6c464000 rw-p 00000000 00:00 0                          [stack:24767]
+7fdd6c464000-7fdd6c465000 ---p 00000000 00:00 0 
+7fdd6c465000-7fdd6c565000 rw-p 00000000 00:00 0                          [stack:24766]
+7fdd6c565000-7fdd6c566000 ---p 00000000 00:00 0 
+7fdd6c566000-7fdd6c666000 rw-p 00000000 00:00 0                          [stack:24765]
+7fdd6c666000-7fdd6c667000 ---p 00000000 00:00 0 
+7fdd6c667000-7fdd6c767000 rw-p 00000000 00:00 0                          [stack:24764]
+7fdd6c767000-7fdd6c9d7000 rwxp 00000000 00:00 0 
+7fdd6c9d7000-7fdd6f767000 rw-p 00000000 00:00 0 
+7fdd6f767000-7fdd6f781000 r-xp 00000000 00:2c 13769075                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/amd64/libzip.so
+7fdd6f781000-7fdd6f981000 ---p 0001a000 00:2c 13769075                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/amd64/libzip.so
+7fdd6f981000-7fdd6f982000 rw-p 0001a000 00:2c 13769075                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/amd64/libzip.so
+7fdd6f982000-7fdd70000000 r--s 00000000 fd:00 796642                     /var/lib/sss/mc/passwd
+7fdd70000000-7fdd70361000 rw-p 00000000 00:00 0 
+7fdd70361000-7fdd74000000 ---p 00000000 00:00 0 
+7fdd74000000-7fdd74001000 r--s 00006000 00:2c 13763475                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/bzip2.jar
+7fdd74001000-7fdd74002000 r--s 00009000 00:2c 13763485                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/gnu-regexp-1.1.4.jar
+7fdd74002000-7fdd74004000 r--s 00005000 00:2c 13763508                   /opt/MATHEMATICA/10.0/SystemFiles/Converters/Java/stax-api-1.0.1.jar
+7fdd74004000-7fdd74006000 r--s 00013000 00:2c 13762971                   /opt/MATHEMATICA/10.0/SystemFiles/Autoload/PacletManager/Java/WRIjdbm.jar
+7fdd74006000-7fdd74008000 r--s 00011000 00:2c 13762974                   /opt/MATHEMATICA/10.0/SystemFiles/Autoload/PacletManager/Java/mexprparser.jar
+7fdd74008000-7fdd7400a000 r--s 00011000 00:2c 13762970                   /opt/MATHEMATICA/10.0/SystemFiles/Autoload/PacletManager/Java/PacletManager.jar
+7fdd7400a000-7fdd74010000 r--s 0006e000 00:2c 13762972                   /opt/MATHEMATICA/10.0/SystemFiles/Autoload/PacletManager/Java/antlr.jar
+7fdd74010000-7fdd74013000 r--s 00023000 00:2c 13768932                   /opt/MATHEMATICA/10.0/SystemFiles/Java/WolframSSH.jar
+7fdd74013000-7fdd74016000 r--s 00023000 00:2c 13768935                   /opt/MATHEMATICA/10.0/SystemFiles/Java/WolframSSHKeyGen.jar
+7fdd74016000-7fdd7406c000 rw-p 00000000 00:00 0 
+7fdd7406c000-7fdd74077000 rw-p 00000000 00:00 0 
+7fdd74077000-7fdd74095000 rw-p 00000000 00:00 0 
+7fdd74095000-7fdd740ea000 rw-p 00000000 00:00 0 
+7fdd740ea000-7fdd74115000 rw-p 00000000 00:00 0 
+7fdd74115000-7fdd74120000 rw-p 00000000 00:00 0 
+7fdd74120000-7fdd741d6000 rw-p 00000000 00:00 0 
+7fdd741d6000-7fdd741de000 r-xp 00000000 fd:00 137568                     /usr/lib64/libnss_sss.so.2
+7fdd741de000-7fdd743dd000 ---p 00008000 fd:00 137568                     /usr/lib64/libnss_sss.so.2
+7fdd743dd000-7fdd743de000 r--p 00007000 fd:00 137568                     /usr/lib64/libnss_sss.so.2
+7fdd743de000-7fdd743df000 rw-p 00008000 fd:00 137568                     /usr/lib64/libnss_sss.so.2
+7fdd743df000-7fdd743ea000 r-xp 00000000 fd:00 171340                     /usr/lib64/libnss_files-2.18.so
+7fdd743ea000-7fdd745e9000 ---p 0000b000 fd:00 171340                     /usr/lib64/libnss_files-2.18.so
+7fdd745e9000-7fdd745ea000 r--p 0000a000 fd:00 171340                     /usr/lib64/libnss_files-2.18.so
+7fdd745ea000-7fdd745eb000 rw-p 0000b000 fd:00 171340                     /usr/lib64/libnss_files-2.18.so
+7fdd745eb000-7fdd745ee000 r--s 00039000 00:2c 13773829                   /opt/MATHEMATICA/10.0/SystemFiles/Links/JLink/JLink.jar
+7fdd745ee000-7fdd745f9000 rw-p 00000000 00:00 0 
+7fdd745f9000-7fdd74617000 rw-p 00000000 00:00 0 
+7fdd74617000-7fdd74640000 r-xp 00000000 00:2c 13769045                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/amd64/libjava.so
+7fdd74640000-7fdd74840000 ---p 00029000 00:2c 13769045                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/amd64/libjava.so
+7fdd74840000-7fdd74842000 rw-p 00029000 00:2c 13769045                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/amd64/libjava.so
+7fdd74842000-7fdd7484f000 r-xp 00000000 00:2c 13769074                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/amd64/libverify.so
+7fdd7484f000-7fdd74a4e000 ---p 0000d000 00:2c 13769074                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/amd64/libverify.so
+7fdd74a4e000-7fdd74a50000 rw-p 0000c000 00:2c 13769074                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/amd64/libverify.so
+7fdd74a50000-7fdd74a53000 ---p 00000000 00:00 0 
+7fdd74a53000-7fdd74b51000 rw-p 00000000 00:00 0                          [stack:24763]
+7fdd74b51000-7fdd75598000 r-xp 00000000 00:2c 13769080                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/amd64/server/libjvm.so
+7fdd75598000-7fdd75798000 ---p 00a47000 00:2c 13769080                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/amd64/server/libjvm.so
+7fdd75798000-7fdd7583b000 rw-p 00a47000 00:2c 13769080                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/amd64/server/libjvm.so
+7fdd7583b000-7fdd7587b000 rw-p 00000000 00:00 0 
+7fdd7587b000-7fdd75891000 r-xp 00000000 00:2c 13769077                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/amd64/jli/libjli.so
+7fdd75891000-7fdd75a91000 ---p 00016000 00:2c 13769077                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/amd64/jli/libjli.so
+7fdd75a91000-7fdd75a92000 rw-p 00016000 00:2c 13769077                   /opt/MATHEMATICA/10.0/SystemFiles/Java/Linux-x86-64/lib/amd64/jli/libjli.so
+7fdd75a92000-7fdd75a93000 rw-p 00000000 00:00 0 
+7fdd75a93000-7fdd75a94000 r--s 00004000 00:2c 13762973                   /opt/MATHEMATICA/10.0/SystemFiles/Autoload/PacletManager/Java/mexpr.jar
+7fdd75a94000-7fdd75ab5000 rw-p 00000000 00:00 0 
+7fdd75ab5000-7fdd75abd000 rw-s 00000000 00:21 1034030                    /tmp/hsperfdata_hanbo/24761 (deleted)
+7fdd75abd000-7fdd75abe000 rw-p 00000000 00:00 0 
+7fdd75abe000-7fdd75abf000 ---p 00000000 00:00 0 
+7fdd75abf000-7fdd75ac0000 rw-p 00000000 00:00 0 
+7ffd358d2000-7ffd358f4000 rw-p 00000000 00:00 0                          [stack]
+7ffd35975000-7ffd35977000 r--p 00000000 00:00 0                          [vvar]
+7ffd35977000-7ffd35979000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Xmx256m -Djava.system.class.loader=com.wolfram.jlink.JLinkSystemClassLoader -Djava.util.prefs.PreferencesFactory=com.wolfram.jlink.DisabledPreferencesFactory 
+java_command: com.wolfram.jlink.Install -init /tmp/m000001244381 -mathlink -linkprotocol SharedMemory -linkconnect -linkname ge5hr_shm
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=/opt/MATHEMATICA/10.0/Executables:/opt/MATHEMATICA/10.0/SystemFiles/Graphics/Binaries/Linux-x86-64:/usr/bin:/bin:/opt/MATHEMATICA/10.0/Executables:/opt/MATHEMATICA/10.0/bin:/opt/adobe/9.5.1/Reader9/bin:/opt/intel/12.1.5/bin:/usr/local/texlive/2014/bin/i386-linux:/home/hanbo/anaconda/bin::/opt/openmpi/1.4.5-intel-12.1.5/bin:/anaconda/bin:/cita/h/home-3/hanbo/GCM_program/UTIL/PYTHON:/cita/h/home-3/hanbo/GCM_program/UTIL/PYTHON/planetoplot_v2:/cita/h/home-3/hanbo/GCM_program/UTIL/SCRIPT:/cita/local/bin:/local/bin:/local/bin/X11:/usr/bin/X11:/home/hanbo/local/bin:/opt/openmpi/1.6.1-intel-12.1.5/bin
+LD_LIBRARY_PATH=/opt/MATHEMATICA/10.0/SystemFiles/Libraries/Linux-x86-64::/opt/openmpi/1.4.5-intel-12.1.5/lib:/opt/openmpi/1.4.5-intel-12.1.5/lib:/home/hanbo/local/lib:/opt/intel/12.1.5/composer_xe_2011_sp1.11.339/compiler/lib/intel64:/opt/intel/12.1.5/composerxe/debugger/lib/intel64:/opt/intel/12.1.5/composerxe/mkl/lib/intel64:/opt/openmpi/1.6.1-intel-12.1.5/lib:/home/hanbo/local/lib:/opt/MATHEMATICA/10.0/SystemFiles/Libraries/Linux-x86-64/Mesa
+SHELL=/bin/bash
+DISPLAY=:0.0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x8a5d70], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x8a5d70], sa_mask[0]=0x7ffbfeff, sa_flags=0x00000004
+SIGFPE: [libjvm.so+0x741e50], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: [libJLinkNativeLibrary.so+0x19e220], sa_mask[0]=0x00000000, sa_flags=0x00000004
+SIGXFSZ: [libjvm.so+0x741e50], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x741e50], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x7417a0], sa_mask[0]=0x00000000, sa_flags=0x10000004
+SIGHUP: [libJLinkNativeLibrary.so+0x19e220], sa_mask[0]=0x00000000, sa_flags=0x00000004
+SIGINT: [libJLinkNativeLibrary.so+0x19e220], sa_mask[0]=0x00000000, sa_flags=0x00000004
+SIGTERM: [libJLinkNativeLibrary.so+0x19e220], sa_mask[0]=0x00000000, sa_flags=0x00000004
+SIGQUIT: [libjvm.so+0x743b30], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+
+
+---------------  S Y S T E M  ---------------
+
+OS:Fedora release 20 (Heisenbug)
+
+uname:Linux 3.18.9-100.fc20.x86_64 #1 SMP Mon Mar 9 16:27:23 UTC 2015 x86_64
+libc:glibc 2.18 NPTL 2.18 
+rlimit: STACK 8192k, CORE 0k, NPROC 1024, NOFILE 4096, AS infinity
+load average:0.21 0.23 0.18
+
+/proc/meminfo:
+MemTotal:       12295304 kB
+MemFree:          263952 kB
+MemAvailable:    9587448 kB
+Buffers:          319840 kB
+Cached:          9088652 kB
+SwapCached:            0 kB
+Active:          4330624 kB
+Inactive:        7129880 kB
+Active(anon):    1445016 kB
+Inactive(anon):   694776 kB
+Active(file):    2885608 kB
+Inactive(file):  6435104 kB
+Unevictable:          88 kB
+Mlocked:              88 kB
+SwapTotal:      25165820 kB
+SwapFree:       25165820 kB
+Dirty:                36 kB
+Writeback:             0 kB
+AnonPages:       2051832 kB
+Mapped:           494724 kB
+Shmem:             87788 kB
+Slab:             294900 kB
+SReclaimable:     256188 kB
+SUnreclaim:        38712 kB
+KernelStack:       10272 kB
+PageTables:        51672 kB
+NFS_Unstable:          4 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    31313472 kB
+Committed_AS:    7349744 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      379896 kB
+VmallocChunk:   34359349756 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      224768 kB
+DirectMap2M:    12349440 kB
+
+
+CPU:total 4 (4 cores per cpu, 2 threads per core) family 6 model 26 stepping 5, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht, tsc, tscinvbit, tscinv
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 26
+model name	: Intel(R) Core(TM) i7 CPU         920  @ 2.67GHz
+stepping	: 5
+microcode	: 0x19
+cpu MHz		: 2667.000
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm sse4_1 sse4_2 popcnt lahf_lm ida dtherm tpr_shadow vnmi flexpriority ept vpid
+bugs		:
+bogomips	: 5340.31
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 26
+model name	: Intel(R) Core(TM) i7 CPU         920  @ 2.67GHz
+stepping	: 5
+microcode	: 0x19
+cpu MHz		: 2267.000
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm sse4_1 sse4_2 popcnt lahf_lm ida dtherm tpr_shadow vnmi flexpriority ept vpid
+bugs		:
+bogomips	: 5340.31
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 26
+model name	: Intel(R) Core(TM) i7 CPU         920  @ 2.67GHz
+stepping	: 5
+microcode	: 0x19
+cpu MHz		: 1867.000
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 2
+cpu cores	: 4
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm sse4_1 sse4_2 popcnt lahf_lm ida dtherm tpr_shadow vnmi flexpriority ept vpid
+bugs		:
+bogomips	: 5340.31
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 26
+model name	: Intel(R) Core(TM) i7 CPU         920  @ 2.67GHz
+stepping	: 5
+microcode	: 0x19
+cpu MHz		: 2533.000
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 3
+cpu cores	: 4
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm sse4_1 sse4_2 popcnt lahf_lm ida dtherm tpr_shadow vnmi flexpriority ept vpid
+bugs		:
+bogomips	: 5340.31
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 12295304k(263952k free), swap 25165820k(25165820k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (23.7-b01) for linux-amd64 JRE (1.7.0_13-b20), built on Jan 30 2013 01:08:59 by "java_re" with gcc 4.3.0 20080428 (Red Hat 4.3.0-8)
+
+time: Thu Aug  6 09:06:17 2015
+elapsed time: 52 seconds
+
